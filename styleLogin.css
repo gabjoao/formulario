@@ -24,6 +24,7 @@ body{
 
 #formContainer{
     display: flex;
+    flex-direction: row-reverse;
     width: 830px;
     height: 600px;
     border-radius: 20px;
@@ -41,13 +42,13 @@ h1, p{
     cursor: default;
 }
 
-/*Lado esquerdo*/
+/*Verde*/
 .login{
     width: 415px;
     height: 600px;
     flex-shrink: 0;
     background: #334745;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 0px 20px 20px 0px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -115,7 +116,7 @@ h1, p{
 }
 
 
-/*Lado direito*/
+/*Branco*/
 .criar{
     display: flex;
     flex-direction: column;
@@ -183,6 +184,10 @@ h1, p{
     padding: 12px;
     position: relative;
 
+}
+
+#senha{
+    margin-bottom: 50px;
 }
 
 .btnCriar{
