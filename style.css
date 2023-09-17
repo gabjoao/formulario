@@ -37,6 +37,10 @@ button, input{
     cursor: pointer;
 }
 
+h1, p{
+    cursor: default;
+}
+
 /*Lado esquerdo*/
 .login{
     width: 415px;
@@ -106,6 +110,8 @@ button, input{
     letter-spacing: -1.32px;
     filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, 0.25));
     transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 25ms;
 }
 
 
@@ -140,6 +146,7 @@ button, input{
 }
 
 .criar p{
+    margin-top: 5px;
     color: #334745;
     text-align: center;
     text-shadow: 3px 2px 4px rgba(51, 71, 69, 0.25);
@@ -195,15 +202,30 @@ button, input{
     letter-spacing: -1.32px;
     filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, 0.25));
     transition-property: all;
-    
+    transition-duration: 0.5s;
+    transition-delay: 25ms;
 
 }
 
 .btnCriar:hover, .btnLogar:hover{
-    
+    scale: 110%;
+
 }
 
-.infos input::placeholder{
+.btnCriar:hover{
+    border: 2px solid white;
+    color: #283f3d;
+    filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
+}
+
+.btnLogar:hover{
+    border: 2px solid #101f1d;
+    color: #edf2f5;
+    filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
+
+}
+
+.infos .dados::placeholder{
     color: rgba(51, 71, 69, 0.70);
     font-family: Poppins;
     font-size: 16px;
@@ -213,14 +235,11 @@ button, input{
     letter-spacing: -0.88px;
 }
 
-.infos input:focus{
+.infos .dados:focus{
     border: 0;
     outline: 0;
     
 }
-
-
-
 
 
 .icones{
@@ -246,7 +265,17 @@ button, input{
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 4px 0px rgba(154, 210, 205, 0.25);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 2ms;
+    border: 0;
 }
+
+.icones button:hover{
+    scale: 110%;
+    border: 1px solid rgba(255, 255, 255, 0.603);
+}
+
 
 #fb{
 
