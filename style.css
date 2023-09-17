@@ -29,13 +29,19 @@ body{
     border-radius: 20px;
     background: #D3DADF;
     box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+    margin: 5%;
 
 }
 
+button{
+    cursor: pointer;
+}
+
+/*Lado esquerdo*/
 .login{
     width: 415px;
     height: 600px;
+    flex-shrink: 0;
     background: #334745;
     border-radius: 20px 0px 0px 20px;
     display: flex;
@@ -105,16 +111,119 @@ body{
 }
 
 
+/*Lado direito*/
+.criar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 830px;
+    height: 600px;
+  
 
+}
 
-.logins{
-   width: 41px;
-   height: 35px;
-   border-radius: 100px;
-   background: #334745;
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.criar h1{
+    color: #334745;
+    text-align: center;
+    text-shadow: 3px 2px 4px rgba(51, 71, 69, 0.25);
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -2.64px;
+}
+
+.criar p{
+    color: #334745;
+    text-align: center;
+    text-shadow: 3px 2px 4px rgba(51, 71, 69, 0.25);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.88px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infos input{
+    border: none;
+    width: 290px;
+    height: 30px;
+    flex-shrink: 0;   
+    border-radius: 8px;
+    background: #B7C4CE;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.infos input::placeholder{
+    color: rgba(51, 71, 69, 0.70);
+    padding: 12px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.88px;
+}
+
+.btnCriar{
+    color: #334745;
+    width: 180px;
+    height: 50px;
+    background-color: #D3DADF;
+    border-radius: 25px;
+    border: 2px solid #334745;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.32px;
+    filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 258px;
+    height: 36px;
+    filter: drop-shadow(3px 2px 4px rgba(51, 71, 69, 0.25));
    
 }
 
+.icones button{
+    width: 41px;
+    height: 35px;
+    border-radius: 100px;
+    background: #334745;
+    border: none;
+}
 
+.sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px 0px rgba(154, 210, 205, 0.25);
+}
 
+#fb{
 
+    box-shadow: 0px 0px 4px 0px rgba(154, 210, 205, 0.25);
+}
