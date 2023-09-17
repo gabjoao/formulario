@@ -33,7 +33,7 @@ body{
 
 }
 
-button{
+button, input{
     cursor: pointer;
 }
 
@@ -46,8 +46,8 @@ button{
     border-radius: 20px 0px 0px 20px;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     color: #D3DADF;
 
@@ -57,14 +57,12 @@ button{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 286px;
     height: 218px;
- 
+    gap: 20px;
 }
 
 .txts h1{
     width: 282px;
-    height: 150px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -80,7 +78,6 @@ button{
 .txts p{
     display: flex;
     width: 286px;
-    height: 133px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -108,6 +105,7 @@ button{
     line-height: normal;
     letter-spacing: -1.32px;
     filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, 0.25));
+    transition-property: all;
 }
 
 
@@ -156,10 +154,11 @@ button{
 .infos{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; 
+    align-items: center;
 }
 
-.infos input{
+.infos .dados{
     border: none;
     width: 290px;
     height: 30px;
@@ -167,21 +166,20 @@ button{
     border-radius: 8px;
     background: #B7C4CE;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-}
-
-.infos input::placeholder{
-    color: rgba(51, 71, 69, 0.70);
-    padding: 12px;
+    cursor: text;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.88px;
+    padding: 12px;
+    position: relative;
+
 }
 
 .btnCriar{
+    margin-top: 10px;
     color: #334745;
     width: 180px;
     height: 50px;
@@ -196,7 +194,34 @@ button{
     line-height: normal;
     letter-spacing: -1.32px;
     filter: drop-shadow(3px 2px 4px rgba(0, 0, 0, 0.25));
+    transition-property: all;
+    
+
 }
+
+.btnCriar:hover, .btnLogar:hover{
+    
+}
+
+.infos input::placeholder{
+    color: rgba(51, 71, 69, 0.70);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.88px;
+}
+
+.infos input:focus{
+    border: 0;
+    outline: 0;
+    
+}
+
+
+
+
 
 .icones{
     display: flex;
