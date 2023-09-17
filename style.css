@@ -185,6 +185,10 @@ h1, p{
 
 }
 
+#senha{
+    margin-bottom: 20px;
+}
+
 .btnCriar{
     margin-top: 10px;
     color: #334745;
