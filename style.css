@@ -298,7 +298,142 @@ h1, p{
 }
 
 
-#fb{
 
-    box-shadow: 0px 0px 4px 0px rgba(154, 210, 205, 0.25);
+/*Adaptação Mobile*/
+@media only screen and (max-width: 767px) {
+    @keyframes an{
+        0% { 
+            transform: rotate3d(1, 0, 0, 180deg);
+            filter: blur(8px);
+            
+    
+         }
+    
+    
+        100% { 
+              transform: rotate3d(0, 0, 0, 0deg);
+         }
+        
+    }
+
+
+
+
+    body{
+        flex-wrap: wrap;
+    }
+
+    #formContainer{
+        max-width: 100%;
+        max-height: 100%;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 650px;
+        flex-direction: row;
+
+    }
+
+    .login{
+        max-width: 100%;
+        max-height: 100%;
+        width: 300px;
+        height: 325px;
+        border-radius: 20px 20px 0px 0px;
+        
+
+    }
+
+    .txts{
+        height: 150px;
+        
+    }
+
+    .txts h1{
+        width: 200px;
+        height: 60px;
+        font-size: 36px;
+        
+    }
+
+    .btnLogar{
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .criar{
+        max-width: 100%;
+        max-height: 100%;
+        width: 300px;
+        height: 325px;
+
+    }
+
+    .criar h1{
+        font-size: 36px;
+
+    }
+
+    .content1{
+        height: 90px;
+        
+
+    }
+
+    .criar p{
+        font-size: 12px;
+
+    }
+
+    .icones{
+        width: 200px;
+        height: 18px;
+
+    }
+
+    .icones button{
+        width: 28.472px;
+        height: 24.306px;
+    }
+
+    #fb img{
+        width: 26px;
+    }
+    #gg img, #ld img{
+        width: 16px;
+        height: 16px
+    }
+    #gh img{
+        width: 19px;
+        height: 19px;
+        
+    }
+
+    .infos{
+        gap: 12px;
+
+    }
+
+    .infos .dados{
+        width: 200px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .infos .dados::placeholder{
+        font-size: 12px;
+        
+    }
+
+    #senha{
+        margin-bottom: 10px;
+    }
+
+    .btnCriar{
+        margin-top: 5px;
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+
+    }
 }
